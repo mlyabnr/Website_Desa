@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontak Desa | Desa Klis</title>
+    <link rel="stylesheet" href="assets/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="topbar">
+        <div class="container">
+          <div>Desa Klis • Pulau Moa • Maluku Barat Daya</div>
+          <div>Informasi Resmi Pemerintah Desa</div>
+        </div>
+      </div>
+
+      <div class="container navbar">
+        <div class="brand">
+          <div class="brand-mark">D</div>
+          <div class="brand-copy">
+            <div>Desa Klis</div>
+            <small>Sistem Informasi Desa</small>
+          </div>
+        </div>
+        <button class="menu-toggle" aria-label="Buka menu">☰</button>
+        <nav class="main-nav" aria-label="Menu utama">
+          <a href="index.html">Home</a>
+          <a href="informasi-desa.html">Informasi Desa</a>
+          <a href="visi-misi.html">Visi Misi</a>
+          <a href="profil-desa.html">Profil Desa</a>
+          <a href="struktur-desa.html">Struktur Desa</a>
+          <a href="galeri.html">Galeri</a>
+          <a class="active" href="kontak.html">Kontak</a>
+        </nav>
+
+        <div class="auth-actions">
+          <span class="user-badge hidden" data-user-badge></span>
+          <a class="auth-button" href="login.html" data-login-link>Masuk</a>
+          <button type="button" class="auth-logout hidden" data-logout-button>Keluar</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="container">
+          <h1>Kontak Desa</h1>
+          <p>Hubungi pemerintah Desa Klis untuk layanan administrasi, informasi, dan pengaduan masyarakat.</p>
+        </div>
+      </section>
+
+      <section class="page-content">
+        <div class="container contact-grid" style="margin-bottom: 1.5rem;">
+          <div class="contact-card">
+            <h3>Alamat</h3>
+            <p>Desa Klis, Pulau Moa, Kabupaten Maluku Barat Daya, Provinsi Maluku.</p>
+          </div>
+          <div class="contact-card">
+            <h3>Email</h3>
+            <p>desa.klis@domain.id</p>
+          </div>
+          <div class="contact-card">
+            <h3>Telepon</h3>
+            <p>(0911) 0000 000</p>
+          </div>
+        </div>
+
+        <div class="container">
+          <div class="form-card">
+            <div class="section-header" style="margin-bottom: 1.2rem;">
+              <span>Kirim Pesan</span>
+              <h2>Hubungi Kami</h2>
+            </div>
+
+            <div class="whatsapp-box">
+              <strong>Nomor WhatsApp Desa:</strong>
+              <p>+62 812-3456-7890--</p>
+              <a class="btn btn-primary" href="https://wa.me/6281234567890?text=Halo%20Pemerintah%20Desa%20Klis%2C%20saya%20ingin%20bertanya%20tentang%20layanan%20desa." target="_blank" rel="noopener">
+                Chat WhatsApp
+              </a>
+            </div>
+
+            <form id="contactForm" style="margin-top: 1.5rem;">
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="name">Nama Lengkap</label>
+                  <input id="name" name="name" type="text" placeholder="Masukkan nama Anda" required />
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" placeholder="Masukkan email Anda" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subjek</label>
+                <input id="subject" name="subject" type="text" placeholder="Masukkan subjek pesan" required />
+              </div>
+
+              <div class="form-group">
+                <label for="message">Pesan</label>
+                <textarea id="message" name="message" rows="6" placeholder="Tulis pesan Anda ..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary">Kirim via WhatsApp</button>
+              <p id="form-success" class="success-message" hidden>Pesan Anda siap dikirim melalui WhatsApp.</p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-bottom">
+        © <span id="year"></span> Pemerintah Desa Klis. Semua hak dilindungi.
+      </div>
+    </footer>
+
+    <script src="assets/script.js"></script>
+  </body>
+</html>
